@@ -19,6 +19,6 @@
     "patch": "lerna version patch --force-publish",
     "postinstall": "lerna bootstrap",
     "test": "lerna exec -- ava **/*.test.js",
-    "test-ci": "lerna exec -- ava --tap **/*.test.js | tap-xunit > test-results.xml'"
+    "test-ci": "lerna exec -- ava --tap **/*.test.js | tap-xunit > test-results.xml"
   }
 }
