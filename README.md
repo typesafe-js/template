@@ -9,8 +9,20 @@ It relies on:
 
 Types are declared using JSDoc, like so:
 ```
+/**
+   * @param {string} name
+   * @returns {Promise<boolean>}
+   */
+  async initialize (name) {
+    console.info('Intializing: ' + name)
+    await Util.sleep(1000)
+    return 
+  }
 ```
-It may be surprising that we rely on TypeScript - that is because though code is not written in the TypeScript language, we rely on TypeScript to catch errors.
+
+We leverate the TypeScript compiler to then ensure methods are being called in the correct way. Essentially, rather than using the TypeScript language to specify our types, instead we are using JSDoc. Though the JSDoc syntax may be a bit more verbose, it has the advantage that is does not require transpilation.
+
+It also obviously facilitates leveraging JSDoc for documentation.
 
 
 # What Are The Benefits?
