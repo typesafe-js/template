@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "cwd":"${workspaceFolder}\\packages\\runner",
+      "type": "node",
+      "request": "launch",
+      "name": "Ava-Runner",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}\\node_modules\\ava\\cli",
+      "args": ["**/interceptor.test.js"]
+    }
+  ]
+}

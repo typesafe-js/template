@@ -1,0 +1,18 @@
+{
+  "ava": {
+    "failWithoutAssertions": false,
+    "files": [
+      "test/**/*.test.js"
+    ]
+  },
+  "name": "@typesafejs/shared",
+  "scripts": {
+    "test": "ava"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "ava": "^3.15.0",
+    "tap-xunit": "^2.4.1"
+  }
+}
