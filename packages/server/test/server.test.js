@@ -3,6 +3,6 @@ const Server = require('../lib/server')
 
 ava('initialize', async (test) => {
   const server = new Server()
-  const result = await server.initialize()
+  const result = await server.initialize('UNIT-TEST')
   test.assert(result)
 })
