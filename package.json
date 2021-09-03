@@ -1,12 +1,16 @@
 {
   "devDependencies": {
+    "ava": "^3.15.0",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^5.3.5",
     "eslint-plugin-jsdoc": "^36.0.6",
     "lerna": "^4.0.0",
+    "tap-xunit": "^2.4.1",
     "typescript": "^4.3.5"
   },
-  "files": ["packages/**/lib/*.js"],
+  "files": [
+    "packages/**/lib/*.js"
+  ],
   "name": "typesafe.js",
   "scripts": {
     "compile": "lerna exec --stream -- tsc ",
@@ -14,7 +18,7 @@
     "minor": "lerna version minor --force-publish",
     "patch": "lerna version patch --force-publish",
     "postinstall": "lerna bootstrap",
-    "test": "lerna exec -- npx ava **/*.test.js",
-    "test-ci": "lerna exec -- npx ava --tap **/*.test.js | npx tap-xunit > test-results.xml"
+    "test": "lerna exec -- ava **/*.test.js",
+    "test-ci": "lerna exec -- ava --tap **/*.test.js | tap-xunit > test-results.xml'"
   }
 }
