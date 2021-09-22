@@ -8,4 +8,5 @@ ava('env', async (test) => {
 
 ava('sleep', async (test) => {
   await Util.sleep(1000)
+  test.assert(true)
 })

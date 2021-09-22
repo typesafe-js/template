@@ -3,7 +3,7 @@
  */
 class Util {
   /**
-   * @param property
+   * @param {string} property
    * @returns {string}
    */
   static env (property) {
