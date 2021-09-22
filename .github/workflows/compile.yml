@@ -23,10 +23,12 @@ jobs:
         node-version: 16.x
     
     - name: Install Dependencies
-      run: npm install
+      run: |
+        npx yarn install
+        npx lerna bootstrap
       
     - name: Lint
-      run: npm run eslint
+      run: npx yarn run lint
 
     - name: Compile
-      run: npm run compile
+      run: npx yarn run compile

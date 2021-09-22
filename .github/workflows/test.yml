@@ -25,10 +25,10 @@ jobs:
         node-version: '16'
 
     - name: Install Dependencies
-      run: npm install
+      run: npx yarn install
 
     - name: Run Unit Tests
-      run: npm run test-ci
+      run: npx yarn run test-ci
 
     - name: Publish Results
       uses: EnricoMi/publish-unit-test-result-action@v1

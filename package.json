@@ -15,10 +15,9 @@
   "name": "typesafe.js",
   "scripts": {
     "compile": "lerna exec --stream -- tsc ",
-    "eslint": "lerna exec -- eslint -c ../../.eslintrc.json --no-error-on-unmatched-pattern bin lib test",
+    "lint": "lerna exec -- eslint -c ../../.eslintrc.json --no-error-on-unmatched-pattern bin lib test",
     "minor": "lerna version minor --force-publish",
     "patch": "lerna version patch --force-publish",
-    "postinstall": "lerna bootstrap",
     "test": "lerna exec -- ava **/*.test.js",
     "test-ci": "lerna exec -- ava --tap **/*.test.js | tap-xunit > test-results.xml"
   },
