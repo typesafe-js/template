@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../sdk"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"eslint.alwaysShowStatus": true
+	}
+}

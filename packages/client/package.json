@@ -6,13 +6,13 @@
     ]
   },
   "dependencies": {
-    "@typesafejs/shared": "^0.1.0"
+    "@typesafejs/shared": "^0.2.0"
   },
   "name": "@typesafejs/client",
   "scripts": {
     "test": "ava"
   },
-  "version": "0.1.6",
+  "version": "0.2.0",
   "devDependencies": {
     "@types/node": "^16.7.10"
   }

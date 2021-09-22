@@ -6,10 +6,7 @@
     ]
   },
   "dependencies": {
-    "@typesafejs/shared": "0.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^16.7.10"
+    "@typesafejs/shared": "0.2.0"
   },
   "name": "@typesafejs/server",
   "scripts": {
@@ -18,5 +15,5 @@
     "reprocess": "bbt reprocess input/core-commands.json",
     "test": "ava"
   },
-  "version": "0.1.6"
+  "version": "0.2.0"
 }

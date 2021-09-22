@@ -5,3 +5,4 @@ lerna-debug.log
 test-results.xml
 
 *.bak
+*.log
