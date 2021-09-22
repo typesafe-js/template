@@ -13,6 +13,7 @@
     "packages/**/lib/*.js"
   ],
   "name": "typesafe.js",
+  "private": true,
   "scripts": {
     "compile": "lerna exec --stream -- tsc ",
     "lint": "lerna exec -- eslint -c ../../.eslintrc.json --no-error-on-unmatched-pattern bin lib test",

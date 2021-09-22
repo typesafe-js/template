@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "../compile-action"
 		}
 	],
 	"settings": {
