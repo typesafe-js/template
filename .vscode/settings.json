@@ -7,9 +7,5 @@
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "eslint.run": "onSave",
-  "eslint.validate": ["javascript"],
-  "eslint.workingDirectories": [
-    "./packages/client/lib", 
-    "./frontend"
-],
+  "eslint.validate": ["javascript"]
 }
